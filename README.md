@@ -1,2 +1,3 @@
 # React-Native-Applications
-My applications while learning react native
+
+Applications while learning react native

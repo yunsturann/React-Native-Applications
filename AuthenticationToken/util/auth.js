@@ -1,6 +1,5 @@
 import axios from "axios";
-
-const API_KEY = "";
+import API_KEY from "./API_KEY";
 
 const authentication = async (mode, email, password) => {
   const response = await axios.post(

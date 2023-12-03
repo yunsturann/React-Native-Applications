@@ -3,6 +3,15 @@ import jsonServer from "../api/jsonServer";
 
 const blogReducer = (state, action) => {
   switch (action.type) {
+    // case "addBlogPost":
+    //   return [
+    //     ...state,
+    //     {
+    //       id: action.payload.content,
+    //       title: action.payload.title,
+    //       content: action.payload.content,
+    //     },
+    //   ];
     case "getBlogPosts":
       return action.payload;
 
@@ -20,6 +29,7 @@ const blogReducer = (state, action) => {
 };
 const addBlogPost = (dispatch) => {
   return async (title, content) => {
+    //dispatch({ type: "addBlogPost", payload: { title, content } });
     await jsonServer.post("/blogposts", { title, content });
   };
 };

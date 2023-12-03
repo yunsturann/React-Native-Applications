@@ -34,4 +34,4 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-./util/API_KEY.js
+util/api_key.js

@@ -13,6 +13,7 @@ Uygulamalar ve Kazanımlar
 2. Restaurant App
 
    - Navigation Lib kullanımı
+   - Yelp api kullanımı
    - Flatlist
 
 3. Basic Login Page

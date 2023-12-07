@@ -35,3 +35,4 @@ yarn-error.*
 *.tsbuildinfo
 
 firebaseConfig.js
+package-lock.json

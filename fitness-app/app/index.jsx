@@ -15,7 +15,6 @@ export default function Index() {
 
   return (
     <View className="bg-red-300 flex-1 justify-end">
-      <StatusBar style="light" />
       <Image
         className="w-full h-full absolute"
         source={require("../assets/images/welcome.png")}
@@ -59,6 +58,7 @@ export default function Index() {
           </TouchableOpacity>
         </Animated.View>
       </LinearGradient>
+      <StatusBar style="light" />
     </View>
   );
 }

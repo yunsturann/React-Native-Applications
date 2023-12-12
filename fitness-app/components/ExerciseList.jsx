@@ -7,6 +7,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
+import Animated, { FadeInDown } from "react-native-reanimated";
 
 export default function ExerciseList({ data }) {
   const router = useRouter();
@@ -28,9 +29,21 @@ export default function ExerciseList({ data }) {
 }
 
 const ExerciseCard = ({ item, index, router }) => {
+  const handleClick = () => {
+    router.push({ pathname: "/exerciseDetails", params: item });
+  };
+
   return (
-    <View className="flex py-2 space-y-2">
-      <TouchableOpacity className=" bg-neutral-200 shadow rounded-[25px]">
+    <Animated.View
+      className="flex py-2 space-y-2"
+      entering={FadeInDown.duration(400)
+        .delay(index * 200)
+        .springify()}
+    >
+      <TouchableOpacity
+        className=" bg-neutral-200 shadow rounded-[25px]"
+        onPress={handleClick}
+      >
         <Image
           source={{ uri: item.gifUrl }}
           style={{ width: wp(44), height: wp(44) }}
@@ -41,6 +54,6 @@ const ExerciseCard = ({ item, index, router }) => {
       <Text className=" text-neutral-700 tracking-wide font-semibold text-center">
         {item?.name?.length > 20 ? item.name.slice(0, 20) + "..." : item.name}
       </Text>
-    </View>
+    </Animated.View>
   );
 };

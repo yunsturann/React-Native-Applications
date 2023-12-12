@@ -31,3 +31,20 @@ Uygulamalar ve Kazanımlar
 5. Authentication App
 
    -
+
+6. Fitness App
+
+![caption](gifs/fitness-app.gif)
+
+- expo router needs app folder to route between screens
+- app folder should include \_layout.jsx and index.js
+- expo image is beneficial for caching images not to load again and again
+- several new libraries for me are learned such as:
+  - nativewind
+  - react-native-responsive-screen
+  - expo-linear-gradient
+  - react-native-snap-carousel
+- youtube/CodingWithNomi help me while learning these libraries.Thank you.
+- Some issues fixed such as
+  - nested scrollview and flatlist. we used react-native-virtualized-view lib to import ScroolView
+  - console issues are fixed by adding LogBox.ignoreLogs(["Warning: Failed prop type"]); into the \_layout.jsx

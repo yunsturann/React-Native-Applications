@@ -31,10 +31,10 @@ export default function Home() {
             WORKOUT
           </Text>
         </View>
-        <View className="flex space-y-2 justify-center items-center">
+        <View className="flex space-y-1 justify-center items-center">
           <Image
-            source={require("../assets/images/avatar.png")}
-            style={{ height: hp(6), width: hp(6) }}
+            source={require("../assets/images/avatar.jpg")}
+            style={{ height: hp(8), width: hp(8) }}
             className="rounded-full"
           />
           <View
@@ -50,7 +50,7 @@ export default function Home() {
         <ImageSlider />
       </View>
 
-      {/*Image Slider*/}
+      {/*Body part*/}
       <View className="flex-1">
         <BodyParts />
       </View>

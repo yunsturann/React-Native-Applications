@@ -34,8 +34,6 @@ Uygulamalar ve Kazanımlar
 
 6. Fitness App
 
-![caption](gifs/fitness-app.gif)
-
 - expo router needs app folder to route between screens
 - app folder should include \_layout.jsx and index.js
 - expo image is beneficial for caching images not to load again and again

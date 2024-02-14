@@ -35,3 +35,4 @@ yarn-error.*
 *.tsbuildinfo
 
 util/API_KEY.js
+package-lock.json
